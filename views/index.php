@@ -70,7 +70,7 @@ $allProducts = $products->getAllProduct();
                     <span class="d-flex align-items-center justify-content-center mx-auto text-white mb-4 circle-icon">
                         <i class="far fa-flag fs-3"></i>
                     </span>
-                    <p class="lead fw-bold">Quality</p>
+                    <p class="lead fw-bold">Confidence</p>
                     <p class="fw-light mx-3 lh-lg">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde ut voluptatum ducimus, delectus illum, deleniti quibusdam ullam amet aperiam nihil pariatur voluptates possimus perspiciatis?
                     </p>
@@ -80,7 +80,7 @@ $allProducts = $products->getAllProduct();
                     <span class="d-flex align-items-center justify-content-center mx-auto text-white mb-4 circle-icon">
                         <i class="far fa-star fs-3"></i>
                     </span>
-                    <p class="lead fw-bold">Quality</p>
+                    <p class="lead fw-bold">Efficiency</p>
                     <p class="fw-light mx-3 lh-lg">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde ut voluptatum ducimus, delectus illum, deleniti quibusdam ullam amet aperiam nihil pariatur voluptates possimus perspiciatis?
                     </p>
@@ -353,7 +353,7 @@ $allProducts = $products->getAllProduct();
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">Destiny &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru  &copy;</span> Copyright 2021</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">
