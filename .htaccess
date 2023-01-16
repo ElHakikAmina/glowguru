@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /glowguru/
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?page=$1
+RewriteRule ^([-a-zA-Z0-9]+)/([a-zA-Z0-9]+)$   index.php?page=$1&id=$2
