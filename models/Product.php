@@ -1,5 +1,20 @@
 <?php
 class Product{
+    static public function getProductEndsSoon()
+    {
+        $stmt = DB::connect()->prepare('SELECT * FROM products order by quantity asc');
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_OBJ);
+        $stmt->close();
+        $stmt=null;
+    }
+    static public function LargestQuantityProduct(){
+        $stmt = DB::connect()->prepare('SELECT * FROM products order by quantity desc');
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_OBJ);
+        $stmt->close();
+        $stmt=null;
+    }
     static public function getProduct($data)
     {
         $id = $data['id'];

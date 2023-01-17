@@ -1,5 +1,14 @@
 <?php
 class ProductController{
+    public function getProductEndsSoon()
+    {
+        return $products=Product::getProductEndsSoon();
+         
+    }
+    public function LargestQuantityProduct(){
+        return $products=Product::LargestQuantityProduct();
+         
+    }
     public function updateProduct()
     {
         if(isset($_POST['update']))
@@ -26,10 +35,10 @@ class ProductController{
     }
     public function getOneProduct()
     {
-        if(isset($_POST['id']))
+        if(isset($_GET['id']))
         {
             $data = array(
-                'id' =>$_POST['id']
+                'id' =>$_GET['id']
             );
         }
         $product = Product::getProduct($data);

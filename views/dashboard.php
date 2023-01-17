@@ -1,3 +1,9 @@
+<?php
+$product=new ProductController();
+$allProducts = $product->getAllProduct();
+$ProductEndsSoon =$product->getProductEndsSoon();
+$LargestQuantityProduct =$product->LargestQuantityProduct();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +13,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="http://localhost/glowguru/views/style/dashboard.css">
 </head>
 <body>
     <header class=" bg-green">
@@ -45,51 +51,120 @@
     
 
 
-    <section>
+<section>
+    <div class="row col-lg-10 mx-auto">
         <div class="row">
-            <div class="col-lg-10 row mx-auto">
-                
-                    <div class="card mx-3 my-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Total sales : 230</h5>
-                        </div>
-                    </div>
-
-                    <div class="card mx-3 my-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Total incomes :$ 2300</h5>
-                        </div>
-                    </div>
-
-                    <div class="card mx-3 my-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Total products in stock: 3000</h5>
-                        </div>
-                    </div>
-
-                    <div class="card mx-3 my-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Total Of Articles: 3000</h5>
-                        </div>
-                    </div>
-
-                    <div class="card mx-3 my-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Money in stock:$ 3000</h5>
-                        </div>
-                    </div>
-                
-                
-                
-
-               
-
-
-
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Total sales : 230</h5>
+                </div>
             </div>
-            
+
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Total incomes :$ 2300</h5>
+                </div>
+            </div>
+
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Total products in stock: 3000</h5>
+                </div>
+            </div>
+
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Total Of Articles: 3000</h5>
+                </div>
+            </div>
+
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Money in stock:$ 3000</h5>
+                </div>
+            </div>
+
+            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Out of stock:3</h5>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+<!--  -->
+<section class="overflow-auto">
+<div class="row col-lg-10 mx-auto">
+        <div class="card ">
+            <h5 class="card-title">This product ends soon</h5>
+            <table class="table">
+                <tr>
+                <th colspan="5" scope="row" class="border-0 text-pink-dark "><?php echo $ProductEndsSoon->name ?></th>
+                </tr>
+            <tr>
+                <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $ProductEndsSoon->id ?>" style="width:50px; height:80px;" alt=""></td>
+                <td class="text-muted"><?php echo $ProductEndsSoon->buying_price ?></td>
+                <td class="text-muted"><?php echo $ProductEndsSoon->final_price ?></td>
+                <td class="text-muted"><?php echo $ProductEndsSoon->quantity ?></td>
+                <td>
+                    <button class="btn btn-danger" style="width:100px;">Delete</button>
+                    <button class="btn btn-warning" style="width:100px;">Update</button>
+                </td>
+             </tr>
+            </table>
+        </div>
+    <!---->
+    <div class="card ">
+        <h5 class="card-title">The largest quantity product</h5>
+        <table class="table">
+            <tr>
+            <th scope="row" colspan="5" class="text-pink-dark border-0" ><?php echo $LargestQuantityProduct->name ?></th>
+            </tr>
+        <tr>
+        <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $LargestQuantityProduct->id ?>" style="width:50px; height:80px;" alt=""></td>
+      <td class="text-muted"><?php echo $LargestQuantityProduct->buying_price ?></td>
+      <td class="text-muted"><?php echo $LargestQuantityProduct->final_price ?></td>
+      <td class="text-muted"><?php echo $LargestQuantityProduct->quantity ?></td>
+      <td>
+        <button class="btn btn-warning" style="width:100px;">Update</button>
+        <button class="btn btn-danger" style="width:100px;">Delete</button>
+    </td>
+      
+      </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>All Products</h2>
+    <table class="table">
+  <thead>
+    
+  </thead>
+  <tbody>
+    <?php foreach($allProducts as $p): ?>
+    <tr>
+    <th scope="row" class="border-0 text-pink-dark" colspan="5"><?php echo $p['name']; ?></th>
+    </tr>
+    <tr>
+      <td class="text-muted"><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $p['id']; ?>" style="width:50px; height:80px;" alt=""></td>
+      <td class="text-muted">Buying Price: <?php echo $p['buying_price']; ?></td>
+      <td class="text-muted">Final Price: <?php echo $p['final_price']; ?></td>
+      <td class="text-muted">Quantity: <?php echo $p['quantity']; ?></td>
+      <td>
+        <button class="btn btn-warning" style="width:100px;">Update</button>
+        <button class="btn btn-danger" style="width:100px;">Delete</button>
+      </td>
+      
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
+    </div>
+</div>
+
+
+
+</section>
 
 
 

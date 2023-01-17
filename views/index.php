@@ -257,7 +257,7 @@ $allProducts = $products->getAllProduct();
         <div class="container my-4">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h3 class="mb-4">Promotional Video</h3>
+                    <h3 class="mb-4">Tutorial Video</h3>
                     <p class="lh-lg fw-light pt-2 w-75 mx-auto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet id alias officia, eum ipsum quis vero repellendus aliquid doloribus quia libero facilis eaque dolorem. Perferendis!
                     </p>
@@ -275,7 +275,7 @@ $allProducts = $products->getAllProduct();
         <div class="container my-4 ">
             <div class="row mb-5">
                 <div class="col-12 text-center text-white">
-                    <h3 class="mb-4">App Statics</h3>
+                    <h3 class="mb-4">Statics</h3>
                     <p class="lh-lg fw-light pt-2 w-75 mx-auto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet mollitia magni tempora dolores ea, dolorum vitae eligendi corporis necessitatibus quod optio consequatur reiciendis, ipsum temporibus! Fugit nam debitis cum.
                     </p>
@@ -353,7 +353,7 @@ $allProducts = $products->getAllProduct();
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">GlowGuru  &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru  &copy;</span> Copyright 2023</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">
