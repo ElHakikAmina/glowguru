@@ -3,6 +3,7 @@ $product=new ProductController();
 $allProducts = $product->getAllProduct();
 $ProductEndsSoon =$product->getProductEndsSoon();
 $LargestQuantityProduct =$product->LargestQuantityProduct();
+$product->deleteProduct();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,11 +104,13 @@ $LargestQuantityProduct =$product->LargestQuantityProduct();
                 </tr>
             <tr>
                 <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $ProductEndsSoon->id ?>" style="width:50px; height:80px;" alt=""></td>
-                <td class="text-muted"><?php echo $ProductEndsSoon->buying_price ?></td>
-                <td class="text-muted"><?php echo $ProductEndsSoon->final_price ?></td>
-                <td class="text-muted"><?php echo $ProductEndsSoon->quantity ?></td>
+                <td class="text-muted">Buying price : <?php echo $ProductEndsSoon->buying_price ?></td>
+                <td class="text-muted">Final price : <?php echo $ProductEndsSoon->final_price ?></td>
+                <td class="text-muted">Quantity : <?php echo $ProductEndsSoon->quantity ?></td>
                 <td>
+                <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $ProductEndsSoon->id; ?>">
                     <button class="btn btn-danger" style="width:100px;">Delete</button>
+                </form>
                     <button class="btn btn-warning" style="width:100px;">Update</button>
                 </td>
              </tr>
@@ -122,12 +125,14 @@ $LargestQuantityProduct =$product->LargestQuantityProduct();
             </tr>
         <tr>
         <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $LargestQuantityProduct->id ?>" style="width:50px; height:80px;" alt=""></td>
-      <td class="text-muted"><?php echo $LargestQuantityProduct->buying_price ?></td>
-      <td class="text-muted"><?php echo $LargestQuantityProduct->final_price ?></td>
-      <td class="text-muted"><?php echo $LargestQuantityProduct->quantity ?></td>
+      <td class="text-muted">Buying Price : <?php echo $LargestQuantityProduct->buying_price ?></td>
+      <td class="text-muted">Final Price : <?php echo $LargestQuantityProduct->final_price ?></td>
+      <td class="text-muted">Quantity : <?php echo $LargestQuantityProduct->quantity ?></td>
       <td>
         <button class="btn btn-warning" style="width:100px;">Update</button>
-        <button class="btn btn-danger" style="width:100px;">Delete</button>
+        <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $LargestQuantityProduct->id; ?>">
+            <button class="btn btn-danger" style="width:100px;">Delete</button>
+        </form>
     </td>
       
       </tr>
@@ -152,7 +157,9 @@ $LargestQuantityProduct =$product->LargestQuantityProduct();
       <td class="text-muted">Quantity: <?php echo $p['quantity']; ?></td>
       <td>
         <button class="btn btn-warning" style="width:100px;">Update</button>
-        <button class="btn btn-danger" style="width:100px;">Delete</button>
+        <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $p['id']; ?>">
+            <button class="btn btn-danger" style="width:100px;">Delete</button>
+        </form>
       </td>
       
     </tr>

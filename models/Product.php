@@ -88,6 +88,7 @@ class Product{
             $query = 'delete FROM products WHERE id=:id';
             $stmt=DB::connect()->prepare($query);
             $stmt->execute(array(":id" => $id));
+            return 'ok';
         }catch(PDOException $ex)
         {
             echo 'erreur'.$ex->getMessage();

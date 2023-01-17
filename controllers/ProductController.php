@@ -1,5 +1,19 @@
 <?php
 class ProductController{
+    public function deleteProduct(){
+        if(isset($_GET['id']))
+        {
+            $data['id']=$_GET['id'];
+            $result = Product::delete($data);
+            if($result === 'ok')
+            {
+               header("location:http://localhost/glowguru/dashboard");
+                
+            }
+            
+        }
+        
+    }
     public function getProductEndsSoon()
     {
         return $products=Product::getProductEndsSoon();
@@ -43,20 +57,6 @@ class ProductController{
         }
         $product = Product::getProduct($data);
         return $product;
-    }
-    public function deleteProduct(){
-        if(isset($_POST['id']))
-        {
-            $data['id']=$_POST['id'];
-            $result = Product::delete($data);
-            if($result === 'ok')
-            {
-               // Session::set('success','Employe supprimer');
-                
-            }else{
-                echo $result;
-            }
-        }
     }
     public function getAllProduct()
     {
