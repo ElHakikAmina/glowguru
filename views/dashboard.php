@@ -111,7 +111,9 @@ $product->deleteProduct();
                 <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $ProductEndsSoon->id; ?>">
                     <button class="btn btn-danger" style="width:100px;">Delete</button>
                 </form>
+                <form action="http://localhost/glowguru/modifyProduct/<?php echo $ProductEndsSoon->id; ?>" method="post">
                     <button class="btn btn-warning" style="width:100px;">Update</button>
+                    </form>
                 </td>
              </tr>
             </table>

@@ -32,11 +32,16 @@ class Product{
     static public function update($data)
     {
         $stmt = DB::connect()->prepare('update  products SET
-            Nom = :name,Prix = :price, Image = :image where id = :id');
+        name = :name,buying_price = :buying_price,final_price = :final_price,
+        quantity = :quantity,description = :description,photo = :photo where id = :id
+            ');
         $stmt->bindParam(':id',$data['id']);    
         $stmt->bindParam(':name',$data['name']);
-        $stmt->bindParam(':price',$data['price']);
-        $stmt->bindParam(':image',$data['image']);
+        $stmt->bindParam(':buying_price',$data['buying_price']);
+        $stmt->bindParam(':final_price',$data['final_price']);
+        $stmt->bindParam(':quantity',$data['quantity']);
+        $stmt->bindParam(':description',$data['description']);
+        $stmt->bindParam(':photo',$data['image']);
 
         if($stmt->execute())
         {

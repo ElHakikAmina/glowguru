@@ -27,16 +27,19 @@ class ProductController{
     {
         if(isset($_POST['update']))
         {
-            $logo_club=file_get_contents($_FILES["image"]["tmp_name"]);
+            $image_product=file_get_contents($_FILES["image"]["tmp_name"]);
             $data = array(
-                'id'=>$_POST['id'],
+                'id' =>$_GET['id'],
                 'name' => $_POST['name'],
-                'price' => $_POST['price'],
-               'image'=> $logo_club ,
+                'buying_price' => $_POST['buying_price'],
+                'final_price' => $_POST['final_price'],
+                'quantity' => $_POST['quantity'],
+                'description' => $_POST['description'],
+               'image'=> $image_product ,
                
             );
             $result = Product::update($data);
-            header("location:newarrival");
+            header("location:http://localhost/glowguru/product/".$_GET['id']);
             if($result === 'ok')
             {
                 //Session::set('success','Employe modifier');
