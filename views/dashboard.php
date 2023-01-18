@@ -83,54 +83,62 @@ $TotalProductsInStock=$product->TotalProductsInStock();
         <h5 class="card-title">The largest quantity product</h5>
         <table class="table">
             <tr>
-            <th scope="row" colspan="5" class="text-pink-dark border-0" ><?php echo $LargestQuantityProduct->name ?></th>
+                <th scope="row" colspan="5" class="text-pink-dark border-0" ><?php echo $LargestQuantityProduct->name ?></th>
             </tr>
-        <tr>
-        <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $LargestQuantityProduct->id ?>" style="width:50px; height:80px;" alt=""></td>
-      <td class="text-muted">Buying Price : <?php echo $LargestQuantityProduct->buying_price ?></td>
-      <td class="text-muted">Final Price : <?php echo $LargestQuantityProduct->final_price ?></td>
-      <td class="text-muted">Quantity : <?php echo $LargestQuantityProduct->quantity ?></td>
-      <td>
-        <button class="btn btn-warning" style="width:100px;">Update</button>
-        <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $LargestQuantityProduct->id; ?>">
-            <button class="btn btn-danger" style="width:100px;">Delete</button>
-        </form>
-    </td>
-      
-      </tr>
+            <tr>
+                <td><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $LargestQuantityProduct->id ?>" style="width:50px; height:80px;" alt=""></td>
+                <td class="text-muted">Buying Price : <?php echo $LargestQuantityProduct->buying_price ?></td>
+                <td class="text-muted">Final Price : <?php echo $LargestQuantityProduct->final_price ?></td>
+                <td class="text-muted">Quantity : <?php echo $LargestQuantityProduct->quantity ?></td>
+                <td>
+                <form action="http://localhost/glowguru/modifyProduct/<?php echo $ProductEndsSoon->id; ?>" method="post">
+                    <button class="btn btn-warning" style="width:100px;">Update</button>
+                </form>
+                <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $LargestQuantityProduct->id; ?>">
+                    <button class="btn btn-danger" style="width:100px;">Delete</button>
+                </form>
+                </td>
+            </tr>
         </table>
     </div>
 
-    <div>
+    
         <h2 class="text-center my-5">All Products</h2>
-        <input type="search" onkeyup="searchProduct()" class="searchJs" id="searchJs">
-        <table class="table">
-  <tbody>
-    <?php foreach($allProducts as $p): ?>
-    <tr>
-    <th scope="row" id="nameProduct" class=" border-0 text-pink-dark" colspan="5"><?php echo $p['name']; ?></th>
-    </tr>
-    <tr>
-      <td class="text-muted"><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $p['id']; ?>" style="width:50px; height:80px;" alt=""></td>
-      <td class="text-muted">Buying Price: <?php echo $p['buying_price']; ?></td>
-      <td class="text-muted">Final Price: <?php echo $p['final_price']; ?></td>
-      <td class="text-muted">Quantity: <?php echo $p['quantity']; ?></td>
-      <td>
-        <button class="btn btn-warning" style="width:100px;">Update</button>
-        <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $p['id']; ?>">
-            <button class="btn btn-danger" style="width:100px;">Delete</button>
+        <form action="">
+            <i class="fas fa-search"></i>
+            <input type="text"  id="search-item" placeholder="Search products" onkeyup="search()">
         </form>
-      </td>
-      
-    </tr>
-    <?php endforeach; ?>
-  </tbody>
-</table>
+        
+        <div id="product-list"  class="product-list">
+            <?php foreach($allProducts as $p): ?>
+                <div class="product ">
+                <table class="table">
+            <tbody>
+            
+                <tr>
+                <th scope="row" id="nameProduct" class=" border-0 text-pink-dark" colspan="5"><h6><?php echo $p['name']; ?></h6></th>
+                </tr>
+                <tr >
+                <td class="text-muted"><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $p['id']; ?>" style="width:50px; height:80px;" alt=""></td>
+                <td class="text-muted">Buying Price: <?php echo $p['buying_price']; ?></td>
+                <td class="text-muted">Final Price: <?php echo $p['final_price']; ?></td>
+                <td class="text-muted">Quantity: <?php echo $p['quantity']; ?></td>
+                <td>
+                <button class="btn btn-warning" style="width:100px;">Update</button>
+                <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $p['id']; ?>">
+                    <button class="btn btn-danger" style="width:100px;">Delete</button>
+                </form>
+                </td>
+                </tr>
+            
+            </tbody>
+            </table>
+            </div>
+            <?php endforeach; ?>
+        </div>
+  
     </div>
 </div>
-
-
-
 </section>
 
 
@@ -151,8 +159,7 @@ $TotalProductsInStock=$product->TotalProductsInStock();
             </div>
         </div>
     </footer>
-
-
+    <script src="http://localhost/glowguru/views/js/script.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
