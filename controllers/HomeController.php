@@ -20,7 +20,17 @@ class HomeController
             include ('views/'.$page.'.php');
         }else if($page=='logout')
         {
-            include ('controllers/'.$page.'.php');
+            include ('views/pages/'.$page.'.php');
+        }
+    }
+    //
+    public function navLinks()
+    {
+        if(isset($_SESSION['logged']) && $_SESSION['logged']==true && isset($_SESSION['full_name']))
+        {
+
+        }else{
+            
         }
     }
 

@@ -1,4 +1,7 @@
 <?php
+$admin = new AdminController();
+$admin->isAdminConnected();
+//
 $product = new ProductController();
 $product->addProduct();
 ?>

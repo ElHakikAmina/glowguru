@@ -26,6 +26,9 @@
                     <a href="#">
                         <i class="fa-solid fa-cart-shopping text-white px-2"></i>
                     </a>
+                    <a href="http://localhost/glowguru/logout">
+                        <i class="fa fa-sign-out text-white px-2" aria-hidden="true"></i>
+                        </a>
                 </div>
             </div>
             

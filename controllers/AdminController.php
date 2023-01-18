@@ -14,7 +14,7 @@ class AdminController{
                 $_SESSION['logged']=true;
                 $_SESSION['full_name']=$result->full_name;
                 //Redirect::to('home');
-				header('location:index');
+				header('location:http://localhost/glowguru/index');
             }else{
                 //Session::set('error','Pseudo ou mot de passe est incorrect');
                 //Redirect::to('login');
@@ -27,5 +27,10 @@ class AdminController{
     {
         session_destroy();
     }
+    public function isAdminConnected()
+   {
+    if(!isset($_SESSION['logged']) || $_SESSION['logged']!=true || !isset($_SESSION['full_name'])) 
+    header('location:index');
+   }
 }
 ?>
