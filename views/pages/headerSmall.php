@@ -1,5 +1,5 @@
 <?php
-
+$home2 = new HomeController();
 ?>
 <header class=" bg-green">
         <div class="container">
@@ -16,7 +16,7 @@
                         <input type="text" class="form-control" style="max-width:70%;" placeholder="Enter Your Email...">
                         <button class="btn btn-green search-button" style="max-width:30%;" type="submit">Search</button>
                     </div>
-                    <?php $home->navLinks(); ?>
+                    <?php $home2->navLinks(); ?>
                 </div>
             </div>
             
