@@ -17,20 +17,21 @@ $allProducts = $products->getAllProduct();
         <div class="container">
             <div class="row py-5">
                 <div class="col-sm-6 text-lg-start">
-                    <a href="index.html" class="navbar-brand text-white fs-1">
-                        GlowGuru <i class="fa fa-cunbe"></i>
+                    <a href="http://localhost/glowguru/index" class="navbar-brand text-white fs-1">
+                        <!-- GlowGuru <i class="fa fa-cunbe"></i> -->
+                        <img src="http://localhost/glowguru/views/img/logo.png" style="width:150px; height:80px;" alt="">
                     </a>
                 </div>
                 <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
-                    <a href="login.html" class="text-white px-2 fw-bold text-decoration-none">
+                    <a href="http://localhost/glowguru/login" class="text-white px-2 fw-bold text-decoration-none">
                         Connexion
                     </a>
                     
-                    <a href="#">
-                    <i class="fas fa-chart-line text-white px-2"></i>
+                    <a href="http://localhost/glowguru/dashboard">
+                    
                         <i class="fas fa-chart-bar text-white px-2"></i>
                     </a>
-                    <a href="#">
+                    <a href="http://localhost/glowguru/add">
                         <i class="fa fa-plus text-white px-2" ></i>
                     </a>
                     <a href="#">
@@ -44,7 +45,7 @@ $allProducts = $products->getAllProduct();
                     <h1 class="display-1 fw-normal mt-5">Your beauty start here</h1>
                     <p class="my-4 lead fs-5">
                 Cosmetics, beauty products , fragrances and tools                    </p>
-                    <button type="button" class="btn fw-bold text-white mt-4 btn-header">Explore now!</button>
+                    <a href="#special"><button type="button" class="btn fw-bold text-white mt-4 btn-header">Explore now!</button></a>
                 </div>
                 <div class="col-lg-6 phone-img d-none d-lg-flex justify-content-end gx-0 mt-5">
                     <img src="http://localhost/glowguru/views/img/phone.png" alt="">
@@ -115,7 +116,7 @@ $allProducts = $products->getAllProduct();
                         <p class="text-capitalize mt-3 mb-1"><?php echo $p['name']; ?></p>
                         <span class="fw-bold d-block">$ <?php echo $p['final_price']; ?></span>
                     </a>
-                    <a href="" class="btn btn-green mt-3">Add to cart</a>
+                    <a href="product/<?php echo $p['id']; ?>" class="btn btn-green mt-3">Add to cart</a>
                 </div>
             </div>
             <?php endforeach; ?>

@@ -20,42 +20,8 @@ $TotalProductsInStock=$product->TotalProductsInStock();
     <link rel="stylesheet" href="http://localhost/glowguru/views/style/dashboard.css">
 </head>
 <body>
-    <header class=" bg-green">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-6 text-center text-lg-start text-md-start">
-                    <a href="index.html" class="navbar-brand text-white fs-1">
-                        GlowGuru <i class="fa fa-cunbe"></i>
-                    </a>
-                </div>
-
-                <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
-                    <div class="input-group " style="max-width:400px;">
-                        <input type="text" class="form-control" style="max-width:70%;" placeholder="Enter Your Email...">
-                        <button class="btn btn-primary" style="max-width:30%;" type="submit">subscribe</button>
-                    </div>
-                    <a href="login.html" class="text-white px-2 fw-bold text-decoration-none">
-                        Connexion
-                    </a>
-                    
-                    <a href="#">
-                        <i class="fas fa-chart-bar text-white px-2"></i>
-                    </a>
-                    <a href="add.html">
-                        <i class="fa fa-plus text-white px-2" ></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping text-white px-2"></i>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-    </header>
-    
-
-
-<section>
+    <?php include './views/pages/headerSmall.php' ?>
+<section class="my-5">
     <div class="row col-lg-10 mx-auto">
         <div class="row">
             
@@ -85,9 +51,9 @@ $TotalProductsInStock=$product->TotalProductsInStock();
     </div>
 </section>
 <!--  -->
-<section class="overflow-auto">
+<section class="">
 <div class="row col-lg-10 mx-auto">
-        <div class="card ">
+        <div class="card mb-5">
             <h5 class="card-title">This product ends soon</h5>
             <table class="table">
                 <tr>
@@ -110,7 +76,7 @@ $TotalProductsInStock=$product->TotalProductsInStock();
             </table>
         </div>
     <!---->
-    <div class="card ">
+    <div class="card mb-5">
         <h5 class="card-title">The largest quantity product</h5>
         <table class="table">
             <tr>
@@ -133,15 +99,13 @@ $TotalProductsInStock=$product->TotalProductsInStock();
     </div>
 
     <div>
-        <h2>All Products</h2>
-    <table class="table">
-  <thead>
-    
-  </thead>
+        <h2 class="text-center my-5">All Products</h2>
+        <input type="search" onkeyup="searchProduct()" class="searchJs" id="searchJs">
+        <table class="table">
   <tbody>
     <?php foreach($allProducts as $p): ?>
     <tr>
-    <th scope="row" class="border-0 text-pink-dark" colspan="5"><?php echo $p['name']; ?></th>
+    <th scope="row" id="nameProduct" class=" border-0 text-pink-dark" colspan="5"><?php echo $p['name']; ?></th>
     </tr>
     <tr>
       <td class="text-muted"><img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $p['id']; ?>" style="width:50px; height:80px;" alt=""></td>

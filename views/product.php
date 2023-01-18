@@ -23,38 +23,7 @@ if(isset($_GET['id']))
     <link rel="stylesheet" href="http://localhost/glowguru/views/style/product.css">
 </head>
 <body>
-    <header class=" bg-green">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-6 text-center text-lg-start text-md-start">
-                    <a href="index.html" class="navbar-brand text-white fs-1">
-                        GlowGuru <i class="fa fa-cunbe"></i>
-                    </a>
-                </div>
-
-                <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
-                    <div class="input-group " style="max-width:400px;">
-                        <input type="text" class="form-control" style="max-width:70%;" placeholder="Enter Your Email...">
-                        <button class="btn btn-primary" style="max-width:30%;" type="submit">subscribe</button>
-                    </div>
-                    <a href="login.html" class="text-white px-2 fw-bold text-decoration-none">
-                        Connexion
-                    </a>
-                    
-                    <a href="#">
-                        <i class="fas fa-chart-bar text-white px-2"></i>
-                    </a>
-                    <a href="add.html">
-                        <i class="fa fa-plus text-white px-2" ></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping text-white px-2"></i>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-    </header>
+<?php include './views/pages/headerSmall.php' ?>
     
 
 
