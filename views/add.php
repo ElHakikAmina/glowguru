@@ -49,12 +49,12 @@ $product->addProduct();
     
 
 
-    <section>
-        <div class="row" >
-            <div class="col-lg-6 text-white mx-auto"> 
+<section>
+    <div class="row" >
+        <div class="col-lg-6 text-white mx-auto"> 
+            <h2 class="text-green text-center my-5">Add a product</h2>
+            <form method="post" enctype="multipart/form-data"> 
                 <div id="addForms" class="w-100">
-                <h2 class="text-green text-center my-5">Add a product</h2>
-                <form method="post" enctype="multipart/form-data"> 
                     <div class="form-outline mb-4 mt-2">
                       <input type="text" name="name[]" id="form2Example1" placeholder="Product's name ..." class="form-control" />
                       <label class="form-label text-green" for="form2Example1"> Product's name</label>
@@ -83,17 +83,16 @@ $product->addProduct();
                     <div class="form-outline mb-4">
                         <input type="file" name="image[]" id="form2Example2" class="form-control" />
                         <label class="form-label text-green" for="form2Example2">Photo</label>
-                      </div>
+                    </div>
                 </div>
-                
                     <!-- Submit button -->
                     <button type="submit" name="add" class="btn btn-primary btn-block mb-4 bg-green">Add product</button>
-                    <input type="button" value="" onclick="addForm()">
-                  </form>
-            </div>
-            
-        </div>
-    </section>
+                    <input type="button" value="Add form" onclick="addForm()">
+                
+            </form>
+        </div>    
+    </div>
+</section>
 
 
 

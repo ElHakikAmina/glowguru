@@ -63,28 +63,55 @@ class Product{
     }
     static public function add($data)
     {
-        $stmt = DB::connect()->prepare('insert into products(
-            name,buying_price,final_price,quantity,description,photo
-        )
-        VALUES (
-            :name,:buying_price,:final_price,:quantity,:description,:photo
-        )
-        ');
-        $stmt->bindParam(':name',$data['name']);
-        $stmt->bindParam(':buying_price',$data['buying_price']);
-        $stmt->bindParam(':final_price',$data['final_price']);
-        $stmt->bindParam(':quantity',$data['quantity']);
-        $stmt->bindParam(':description',$data['description']);
-        $stmt->bindParam(':photo',$data['image']);
-        if($stmt->execute())
-        {
-            return 'ok';
-        }else
-        {
-            return 'error';
+
+
+
+
+
+
+        foreach ($data as $product) {
+            $stmt = DB::connect()->prepare("INSERT INTO products(name,buying_price,final_price,quantity,description,photo)
+             VALUES (:name,:buying_price,:final_price,:quantity,:description,:photo)");
+            $stmt->bindParam(':name', $product['name'], PDO::PARAM_STR);
+            $stmt->bindParam(':buying_price', $product['buying_price'], PDO::PARAM_STR);
+            $stmt->bindParam(':final_price', $product['final_price'], PDO::PARAM_STR);
+            $stmt->bindParam(':quantity', $product['quantity'], PDO::PARAM_STR);
+            $stmt->bindParam(':description', $product['description'], PDO::PARAM_STR);
+            $stmt->bindParam(':photo', $product['image'], PDO::PARAM_STR);
+             $stmt->execute();
+             //die(print_r($stmt));
+            // $stmt->close();
+             $stmt = null;
         }
-        $stmt->close();
-        $stmt = null;
+
+
+
+
+
+
+
+        // $stmt = DB::connect()->prepare('insert into products(
+        //     name,buying_price,final_price,quantity,description,photo
+        // )
+        // VALUES (
+        //     :name,:buying_price,:final_price,:quantity,:description,:photo
+        // )
+        // ');
+        // $stmt->bindParam(':name',$data['name']);
+        // $stmt->bindParam(':buying_price',$data['buying_price']);
+        // $stmt->bindParam(':final_price',$data['final_price']);
+        // $stmt->bindParam(':quantity',$data['quantity']);
+        // $stmt->bindParam(':description',$data['description']);
+        // $stmt->bindParam(':photo',$data['image']);
+        // if($stmt->execute())
+        // {
+        //     return 'ok';
+        // }else
+        // {
+        //     return 'error';
+        // }
+        // $stmt->close();
+        // $stmt = null;
     }
     static public function delete($data)
     {
