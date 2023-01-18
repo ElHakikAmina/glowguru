@@ -1,5 +1,8 @@
 <?php
 class ProductController{
+    public function TotalProductsInStock(){return Product::TotalProductsInStock(); }
+    public function TotalOfArticles(){return Product::TotalOfArticles(); }
+    public function totalOutOfStock(){return Product::totalOutOfStock(); }
     public function deleteProduct(){
         if(isset($_GET['id']))
         {

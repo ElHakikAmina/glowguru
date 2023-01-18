@@ -4,6 +4,9 @@ $allProducts = $product->getAllProduct();
 $ProductEndsSoon =$product->getProductEndsSoon();
 $LargestQuantityProduct =$product->LargestQuantityProduct();
 $product->deleteProduct();
+$totalOutOfStock=$product->totalOutOfStock();
+$TotalOfArticles=$product->TotalOfArticles();
+$TotalProductsInStock=$product->TotalProductsInStock();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,39 +58,27 @@ $product->deleteProduct();
 <section>
     <div class="row col-lg-10 mx-auto">
         <div class="row">
+            
+
+            
+
             <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Total sales : 230</h5>
+                    <h5 class="card-title">Total products in stock: <?php echo $TotalProductsInStock; ?></h5>
                 </div>
             </div>
 
             <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Total incomes :$ 2300</h5>
+                    <h5 class="card-title">Total Of Articles: <?php echo $TotalOfArticles; ?></h5>
                 </div>
             </div>
 
-            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Total products in stock: 3000</h5>
-                </div>
-            </div>
+            
 
             <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Total Of Articles: 3000</h5>
-                </div>
-            </div>
-
-            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Money in stock:$ 3000</h5>
-                </div>
-            </div>
-
-            <div class="card mx-3 my-3 bg-pink-light text-pink-dark border-0 shadow" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Out of stock:3</h5>
+                    <h5 class="card-title">Out of stock:<?php echo $totalOutOfStock; ?></h5>
                 </div>
             </div>
         </div>

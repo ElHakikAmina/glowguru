@@ -1,8 +1,32 @@
 <?php
 class Product{
+    public static function TotalProductsInStock()
+    {
+        $query="SELECT sum(quantity) as total FROM products ";
+        $stmt =DB::connect()->prepare($query);
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row['total'];
+    }
+    public static function TotalOfArticles()
+    {
+        $query="SELECT * FROM products ";
+        $stmt =DB::connect()->prepare($query);
+        $stmt->execute();
+        $count = $stmt->rowCount();
+        return $count;
+    }
+    public static function totalOutOfStock()
+    {
+        $query="SELECT * FROM products where quantity='0'";
+        $stmt =DB::connect()->prepare($query);
+        $stmt->execute();
+        $count = $stmt->rowCount();
+        return $count;
+    }
     static public function getProductEndsSoon()
     {
-        $stmt = DB::connect()->prepare('SELECT * FROM products order by quantity asc');
+        $stmt = DB::connect()->prepare("SELECT * FROM products where quantity!='0' order by quantity asc");
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_OBJ);
         $stmt->close();
