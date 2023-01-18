@@ -1,6 +1,7 @@
 <?php
 $products = new ProductController();
 $allProducts = $products->getAllProduct();
+$home2 = new HomeController();
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,21 +24,7 @@ $allProducts = $products->getAllProduct();
                     </a>
                 </div>
                 <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
-                    <a href="http://localhost/glowguru/login" class="text-white px-2 fw-bold text-decoration-none">
-                        Connexion
-                    </a>
-                    
-                    <a href="http://localhost/glowguru/dashboard">
-                    
-                        <i class="fas fa-chart-bar text-white px-2"></i>
-                    </a>
-                    <a href="http://localhost/glowguru/add">
-                        <i class="fa fa-plus text-white px-2" ></i>
-                    </a>
-                    <a href="#">
-                    
-                        <i class="fa-solid fa-cart-shopping text-white px-2"></i>
-                    </a>
+                <?php $home2->navLinks(); ?>
                 </div>
             </div>
             <div class="row">

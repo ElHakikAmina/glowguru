@@ -1,11 +1,6 @@
 <?php
 class HomeController
 {
-    public function __construct()
-    {
-        $this->router();
-    }
-    //
     public function router()
    {
         $page='';
@@ -13,7 +8,7 @@ class HomeController
         {
             $page=htmlspecialchars($_GET['page']);
         }
-        $pages=['add','dashboard','statistic','login','product','index','modifyProduct','search'];
+        $pages=['add','dashboard','login','product','index','modifyProduct'];
         if(in_array($page,$pages))
         {
             //$home->index($page);
@@ -28,9 +23,21 @@ class HomeController
     {
         if(isset($_SESSION['logged']) && $_SESSION['logged']==true && isset($_SESSION['full_name']))
         {
-
+            echo '
+            <a href="http://localhost/glowguru/dashboard">
+                        <i class="fas fa-chart-bar text-white px-2"></i>
+            </a>
+                    <a href="http://localhost/glowguru/add">
+                        <i class="fa fa-plus text-white px-2" ></i>
+                    </a>
+                    <a href="http://localhost/glowguru/logout">
+                        <i class="fa fa-sign-out text-white px-2" aria-hidden="true"></i>
+                        </a>
+            ';
         }else{
-            
+            echo '<a href="http://localhost/glowguru/login" class="text-white px-2 fw-bold text-decoration-none">
+                    Connexion
+                </a>';
         }
     }
 

@@ -4,6 +4,7 @@ if(isset($_POST['btn-login']))
 	$admin = new AdminController();
 $admin->auth();
 }
+$home=new HomeController();
 ?>
 <!DOCTYPE html>
 <html lang="en">
