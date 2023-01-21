@@ -21,8 +21,8 @@ Login:
 
 Product Details:
 
-![growfuruHomeWeb](https://user-images.githubusercontent.com/112892620/213891591-d9041dbd-4510-482a-a25b-10f02b386b73.png)
-
+[![growfuruHomeWeb](https://user-images.githubusercontent.com/112892620/213891591-d9041dbd-4510-482a-a25b-10f02b386b73.png)
+](https://github.com/ElHakikAmina/glowguru/issues/16#issue-1551936880)
 Add Product:
 
 
