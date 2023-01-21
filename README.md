@@ -52,7 +52,7 @@ Home Page:
 ![groguruMobileHome](https://user-images.githubusercontent.com/112892620/213888626-20250ae6-0e7b-4b85-b9fa-c4f428514d8d.png)
 
 
-Add Product
+Add Product:
 
 ![groguruAddProductMobile](https://user-images.githubusercontent.com/112892620/213889317-1f00e728-54b2-4887-9b7c-7ee8d0ebdbf2.png)
 
@@ -60,7 +60,10 @@ Dashboard Mobile
 
 ![groguruDashboardMobil](https://user-images.githubusercontent.com/112892620/213889431-71c38bab-0484-4229-ac63-7938353cda0e.png)
 
-Blog
+Blog:
 
 ![groguruBlogMobile](https://user-images.githubusercontent.com/112892620/213889588-910c19c1-08e0-4594-99bb-21893a1b0d34.png)
 
+Product Details:
+
+![groguruDetailMobile](https://user-images.githubusercontent.com/112892620/213889802-2a4cef26-6215-4877-954d-f7e8e3c6bce5.png)
