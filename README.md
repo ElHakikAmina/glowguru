@@ -29,7 +29,7 @@ Add Product:
 
 Multiple Insert To The Database:
 
-
+![groguruMultipleInsertWeb](https://user-images.githubusercontent.com/112892620/213893905-c33af430-358e-4f52-a9a7-d2e7f48c38e0.png)
 
 
 Dashboard:
