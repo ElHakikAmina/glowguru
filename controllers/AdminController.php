@@ -18,6 +18,7 @@ class AdminController{
             }else{
                 //Session::set('error','Pseudo ou mot de passe est incorrect');
                 //Redirect::to('login');
+
 				header('location:login');
             }
         }
@@ -30,6 +31,11 @@ class AdminController{
     public function isAdminConnected()
    {
     if(!isset($_SESSION['logged']) || $_SESSION['logged']!=true || !isset($_SESSION['full_name'])) 
+    header('location:index');
+   }
+   public function isAdminDisconnected()
+   {
+    if(isset($_SESSION['logged']) && $_SESSION['logged']==true && isset($_SESSION['full_name'])) 
     header('location:index');
    }
    

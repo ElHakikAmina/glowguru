@@ -263,7 +263,7 @@ $home2 = new HomeController();
         <div class="container my-4 ">
             <div class="row mb-5">
                 <div class="col-12 text-center text-white">
-                    <h3 class="mb-4">Statics</h3>
+                    <h3 class="my-4">Statics</h3>
                     <p class="lh-lg fw-light pt-2 w-75 mx-auto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet mollitia magni tempora dolores ea, dolorum vitae eligendi corporis necessitatibus quod optio consequatur reiciendis, ipsum temporibus! Fugit nam debitis cum.
                     </p>

@@ -3,9 +3,11 @@
     --green:#f6a0ad;
     --green-dark:#13bc7e;
     --light-grey:#F1f4f6;
+    --pink-dark:#fb7186;
+    --pink-light:#ffe4e8;
 }
 *{
-    font-family:'Roboto',sans-serif;
+    font-family:'Roboto',sans-serif !important;
 }
 /* misc stylings*/
 ul li{
@@ -83,4 +85,15 @@ header{
 }
 .text-green{
     color: var(--green);
+}
+.text-pink-dark{
+    color:var(--pink-dark) !important;
+}
+.border-pink
+{
+   
+    border-color: var(--pink-dark);
+}
+.form-outline input{
+    color: var(--pink-dark) !important;
 }

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --pink:#f6a0ad;
+    --pink-dark:#13bc7e;
+    --light-grey:#F1f4f6;
+}
+*{
+    font-family:'Roboto',sans-serif;
+}
+.text-pink{
+    color: var(--pink);
+}
+

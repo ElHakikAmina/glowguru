@@ -1,6 +1,7 @@
 <?php
 class HomeController
 {
+    
     public function router()
    {
         $page='';
@@ -16,6 +17,8 @@ class HomeController
         }else if($page=='logout')
         {
             include ('views/pages/'.$page.'.php');
+        }else{
+            include ('views/404.php');
         }
     }
     //
@@ -40,18 +43,5 @@ class HomeController
                 </a>';
         }
     }
-//     public function isAdminConnected()
-//    {
-//     if(isset($_SESSION['logged']) && $_SESSION['logged']==true && isset($_SESSION['full_name'])) 
-//     header('location:index');
-//     //else
-//     //header('location:http://localhost/glowguru/login');
-//     }
-//     public function isAdminDisconnected()
-//     {
-//      if(!isset($_SESSION['logged']) || $_SESSION['logged']!=true || !isset($_SESSION['full_name'])) 
-//      header('location:login');
-     
-//      }
 }
 ?>

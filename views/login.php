@@ -1,12 +1,9 @@
 <?php
-if(isset($_POST['btn-login']))
-{
+
 	$admin = new AdminController();
-$admin->auth();
-}
-//$home=new HomeController();
-// $home2=new HomeController();
-// $home2->isAdminConnected();
+  $admin->auth();
+  $admin->isAdminDisconnected();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,20 +35,18 @@ $admin->auth();
                     <div class="card-body p-4 p-lg-5 text-black">
       
                      
-                      <form action="#" method="post">
-      
-                        
-      
-                        <h2 class="fw-normal mb-3 pb-3 text-center " style="letter-spacing: 1px;">Log in</h2>
+                      <form action="" method="post">
+                        <span></span>
+                        <h2 class="fw-normal mb-3 pb-3 text-center text-pink-dark" style="letter-spacing: 1px;">Log in</h2>
       
                         <div class="form-outline mb-4">
-                          <input type="email" name="email" id="form2Example17" class="form-control form-control-lg" placeholder="Email ..."/>
-                          <label class="form-label" for="form2Example17">Email address</label>
+                          <input type="email" name="email" id="form2Example17" class="form-control form-control-lg border-pink" placeholder="Email ..."/>
+                          <label class="form-label text-secondary" for="form2Example17">Email address</label>
                         </div>
       
                         <div class="form-outline mb-4">
-                          <input type="password" name="password" id="form2Example27" class="form-control form-control-lg" placeholder="password ..." />
-                          <label class="form-label" for="form2Example27">Password</label>
+                          <input type="password" name="password" id="form2Example27" class="form-control form-control-lg border-pink" placeholder="password ..." />
+                          <label class="form-label text-secondary" for="form2Example27">Password</label>
                         </div>
       
                         <div class="pt-1 mb-4">
