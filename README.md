@@ -29,4 +29,7 @@ Add Product:
 ![growguruAddProduct](https://user-images.githubusercontent.com/112892620/213887283-a559229c-8438-480b-9847-27056ca7c551.png)
 
 
+Multiple Insert To The Database:
 
+
+![multipleInsert](https://user-images.githubusercontent.com/112892620/213887343-1a9be157-4840-46cd-b4ee-1b2bef19a666.png)
