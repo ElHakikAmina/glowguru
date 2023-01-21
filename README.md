@@ -47,4 +47,6 @@ Blog:
 
 #################### Web Version ####################
 
+Home Page:
 
+![groguruMobileHome](https://user-images.githubusercontent.com/112892620/213888626-20250ae6-0e7b-4b85-b9fa-c4f428514d8d.png)
