@@ -46,6 +46,7 @@ Blog:
 
 Home Page:
 
+![growfuruHomeMobile](https://user-images.githubusercontent.com/112892620/213894160-c85e3574-fdec-4bba-be9a-00059674318d.png)
 
 
 Add Product:
