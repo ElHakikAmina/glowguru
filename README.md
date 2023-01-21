@@ -59,3 +59,8 @@ Add Product
 Dashboard Mobile
 
 ![groguruDashboardMobil](https://user-images.githubusercontent.com/112892620/213889431-71c38bab-0484-4229-ac63-7938353cda0e.png)
+
+Blog
+
+![groguruBlogMobile](https://user-images.githubusercontent.com/112892620/213889588-910c19c1-08e0-4594-99bb-21893a1b0d34.png)
+
