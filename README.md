@@ -25,7 +25,7 @@ Product Details:
 
 Add Product:
 
-
+![groguruAddProductWeb](https://user-images.githubusercontent.com/112892620/213893737-3def6dd2-80db-4cc4-889a-d116db6d95cb.png)
 
 Multiple Insert To The Database:
 
