@@ -4,7 +4,9 @@ if(isset($_POST['btn-login']))
 	$admin = new AdminController();
 $admin->auth();
 }
-$home=new HomeController();
+//$home=new HomeController();
+// $home2=new HomeController();
+// $home2->isAdminConnected();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +24,7 @@ $home=new HomeController();
     
 
 
-    <section class="vh-100" style="background-color: ;">
+    <section class="vh-100 mb-5">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col col-xl-10">

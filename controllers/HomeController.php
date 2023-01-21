@@ -8,7 +8,7 @@ class HomeController
         {
             $page=htmlspecialchars($_GET['page']);
         }
-        $pages=['add','dashboard','login','product','index','modifyProduct'];
+        $pages=['blog','add','dashboard','login','product','index','modifyProduct'];
         if(in_array($page,$pages))
         {
             //$home->index($page);
@@ -40,6 +40,18 @@ class HomeController
                 </a>';
         }
     }
-
+//     public function isAdminConnected()
+//    {
+//     if(isset($_SESSION['logged']) && $_SESSION['logged']==true && isset($_SESSION['full_name'])) 
+//     header('location:index');
+//     //else
+//     //header('location:http://localhost/glowguru/login');
+//     }
+//     public function isAdminDisconnected()
+//     {
+//      if(!isset($_SESSION['logged']) || $_SESSION['logged']!=true || !isset($_SESSION['full_name'])) 
+//      header('location:login');
+     
+//      }
 }
 ?>

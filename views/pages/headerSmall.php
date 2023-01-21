@@ -12,10 +12,10 @@ $home2 = new HomeController();
                 </div>
 
                 <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
-                    <div class="input-group me-5" style="max-width:400px;">
+                    <!-- <div class="input-group me-5" style="max-width:400px;">
                         <input type="text" class="form-control" style="max-width:70%;" placeholder="Enter Your Email...">
                         <button class="btn btn-green search-button" style="max-width:30%;" type="submit">Search</button>
-                    </div>
+                    </div> -->
                     <?php $home2->navLinks(); ?>
                 </div>
             </div>

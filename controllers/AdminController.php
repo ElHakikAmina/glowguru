@@ -32,5 +32,6 @@ class AdminController{
     if(!isset($_SESSION['logged']) || $_SESSION['logged']!=true || !isset($_SESSION['full_name'])) 
     header('location:index');
    }
+   
 }
 ?>

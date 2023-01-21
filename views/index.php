@@ -16,7 +16,7 @@ $home2 = new HomeController();
   <body>
     <header class="pb-5 overflow-hidden bg-green">
         <div class="container">
-            <div class="row py-5">
+            <div class="row py-4">
                 <div class="col-sm-6 text-lg-start">
                     <a href="http://localhost/glowguru/index" class="navbar-brand text-white fs-1">
                         <!-- GlowGuru <i class="fa fa-cunbe"></i> -->
@@ -133,7 +133,7 @@ $home2 = new HomeController();
                     <p class="text-muted fw-light lh-lg my-4">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tempore ea dolorum quidem praesentium error, sint veritatis distinctio reprehenderit maxime adipisci sequi laboriosam, est sit necessitatibus suscipit quis aspernatur repudiandae sunt eum consectetur voluptas laudantium similique. Dolores ullam eum deleniti dolore beatae quas illo laboriosam.
                     </p>
-                    <button type="button" class="btn btn-green mt-2">Read more</button>
+                    <a href="http://localhost/glowguru/blog"><button type="button" class="btn btn-green mt-2">Read more</button></a>
                 </div>
             </div>
         </div>
@@ -232,7 +232,7 @@ $home2 = new HomeController();
                     <p class="text-muted fw-light lh-lg my-4">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis corrupti quam quidem dolore pariatur!
                     </p>
-                    <button type="button" class="btn btn-green mt-2">Read more</button>
+                    <a href="http://localhost/glowguru/blog"><button type="button" class="btn btn-green mt-2">Read more</button></a>
                 </div>
                 <div class="col-lg-6">
                     <img src="http://localhost/glowguru/views/img/img1.jpg" alt="" class="img-fluid">
@@ -315,7 +315,7 @@ $home2 = new HomeController();
                             <p class="card-text py-3 lh-lg text-muted fw-light">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex minus eos quae. Vero molestiae soluta itaque! Iusto qui maxime, consectetur ex ratione officiis amet nemo, excepturi, atque nam esse sit voluptate tenetur ipsa velit numquam.
                             </p>
-                            <a href="#" class="btn btn-green">Learn more</a>
+                            <a href="http://localhost/glowguru/blog" class="btn btn-green">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@ $home2 = new HomeController();
                             <p class="card-text py-3 lh-lg text-muted fw-light">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex minus eos quae. Vero molestiae soluta itaque! Iusto qui maxime, consectetur ex ratione officiis amet nemo, excepturi, atque nam esse sit voluptate tenetur ipsa velit numquam.
                             </p>
-                            <a href="#" class="btn btn-green">Learn more</a>
+                            <a href="http://localhost/glowguru/blog" class="btn btn-green">Learn more</a>
                         </div>
                     </div>
                 </div>

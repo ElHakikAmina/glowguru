@@ -1,6 +1,6 @@
 <?php
 session_start();
 require 'autoload.php';
-$home = new HomeController();
-$home->router();
+ $home = new HomeController();
+ $home->router();
 ?>
