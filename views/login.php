@@ -66,11 +66,11 @@
 
 
 
-    <footer class="bg-green">
+      <footer class="bg-green mt-5">
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">Destiny &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru &copy;</span> Copyright 2023</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">

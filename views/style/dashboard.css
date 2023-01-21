@@ -64,6 +64,15 @@ ul li{
 .text-pink-dark{
     color: var(--pink-dark);
 }
+.input-search-javascript{
+    padding-left: 20px;
+    height:40px;
+    border-radius:20px;
+    border-bottom-right-radius:20px;
+    width:300px;
+    color: var(--pink-dark);
+    border:1px solid var(--pink-dark); 
+}
 /* header*/
 header{
     height:;

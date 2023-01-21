@@ -7,7 +7,7 @@ class AdminController{
             if(!empty($_POST['email']) && !empty($_POST['email']))
             {
                 $data['email'] = $_POST['email'];
-                $data['password'] = $_POST['password'];
+                $data['password'] = SHA1($_POST['password']);
                 $result = Admin::login($data);
                 if($result ==1){
                     $_SESSION['logged']=true;

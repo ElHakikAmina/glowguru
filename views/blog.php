@@ -11,12 +11,12 @@
 </head>
 <body>
     <?php include './views/pages/headerSmall.php' ?>
-<section class="my-5">
+<section class="mx-4 my-5">
     <div class="row col-lg-10 mx-auto">
         <div class="row">
 
         <img src="http://localhost/glowguru/views/img/daily_skin_care.jpg" alt="">
-        <h3 class="text-center text-pink-dark">daily skin care</h3>
+        <h3 class="text-center text-pink-dark my-5">daily skin care</h3>
         <p class="text-muted">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos ratione amet nemo ipsam, 
             eaque id expedita quia fugit mollitia beatae itaque tempore quo eveniet distinctio. 
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">Destiny &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru &copy;</span> Copyright 2023</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">

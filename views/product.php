@@ -33,7 +33,7 @@ if(isset($_GET['id']))
             <img class="img-fluid" src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $product->id; ?>"  alt="">
         </div>
         <!-- product info -->
-        <div class="col-md-7">
+        <div class="col-md-7 col-11 mx-auto">
             <h3 class="text-pink-dark mt-3"><?php echo $product->name; ?></h3>
             <span class="text-muted ">
             <h6 class="mt-5">About this item</h6>
@@ -178,7 +178,7 @@ if(isset($_GET['id']))
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">Destiny &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru &copy;</span> Copyright 2023</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">

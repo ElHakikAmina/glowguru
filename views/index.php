@@ -17,13 +17,12 @@ $home2 = new HomeController();
     <header class="pb-5 overflow-hidden bg-green">
         <div class="container">
             <div class="row py-4">
-                <div class="col-sm-6 text-lg-start">
+                <div class="col-6 text-lg-start">
                     <a href="http://localhost/glowguru/index" class="navbar-brand text-white fs-1">
-                        <!-- GlowGuru <i class="fa fa-cunbe"></i> -->
                         <img src="http://localhost/glowguru/views/img/logo.png" style="width:150px; height:80px;" alt="">
                     </a>
                 </div>
-                <div class="col-sm-6  d-flex text-white align-items-center nav-icons justify-content-end">
+                <div class="col-6  d-flex text-white align-items-center nav-icons justify-content-end">
                 <?php $home2->navLinks(); ?>
                 </div>
             </div>

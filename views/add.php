@@ -19,11 +19,9 @@ $product->addProduct();
 <body>
 <?php include './views/pages/headerSmall.php' ?>
     
-
-
 <section>
-    <div class="row" >
-        <div class="col-lg-6 text-white mx-auto"> 
+    <div class="" >
+        <div class="col-lg-6 col-10 text-white mx-auto"> 
             <h2 class="text-green text-center my-5">Add a product</h2>
             <form method="post" enctype="multipart/form-data"> 
                 <div id="addForms" class="w-100">
@@ -58,9 +56,10 @@ $product->addProduct();
                     </div>
                 </div>
                     <!-- Submit button -->
-                    <button type="submit" name="add" class="btn btn-primary btn-block mb-4 bg-green">Add product</button>
-                    <input type="button" value="Add form" onclick="addForm()">
-                
+                    
+                    <button type="submit" name="add" class="btn text-white  mb-4 bg-green">Add product</button>
+                    <input type="button" class="btn btn-info text-white mb-4" value="Add form" onclick="addForm()">
+                    
             </form>
         </div>    
     </div>
@@ -72,7 +71,7 @@ $product->addProduct();
         <div class="container">
             <div class="row pt-4 text-white">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class=""> <span class="fw-bold">Destiny &copy;</span> Copyright 2021</p>
+                    <p class=""> <span class="fw-bold">GlowGuru &copy;</span> Copyright 2023</p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <ul class="d-flex p-0">
