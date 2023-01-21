@@ -37,6 +37,7 @@ Dashboard:
 
 Blog:
 
+![growguruBlogWeb](https://user-images.githubusercontent.com/112892620/213893975-faf58a8c-c94e-447a-b3aa-f8f55c8b5ba6.png)
 
 
 
