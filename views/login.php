@@ -3,7 +3,6 @@
 	$admin = new AdminController();
   $admin->auth();
   $admin->isAdminDisconnected();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +35,7 @@
       
                      
                       <form action="" method="post">
-                        <span></span>
+                        <span class="text-danger"><?php $admin->LoginError()?></span>
                         <h2 class="fw-normal mb-3 pb-3 text-center text-pink-dark" style="letter-spacing: 1px;">Log in</h2>
       
                         <div class="form-outline mb-4">
