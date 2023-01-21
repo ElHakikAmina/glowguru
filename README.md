@@ -24,4 +24,9 @@ Product Details:
 
 ![productDetailsWev](https://user-images.githubusercontent.com/112892620/213875812-9a2e3f9a-c980-4317-86be-1e7161b75bb1.png)
 
+Add Product:
+
+![growguruAddProduct](https://user-images.githubusercontent.com/112892620/213887283-a559229c-8438-480b-9847-27056ca7c551.png)
+
+
 
