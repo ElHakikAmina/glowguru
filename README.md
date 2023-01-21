@@ -1,5 +1,14 @@
 # glowguru
 
+Is a website that sells cosmetics online.
+
+The website allows the admin to login, add, delete and modify a product also to search in the dashboard and disconnect.
+
+Visitors can see the home page and product details.
+
+Made with: html, css, bootstrap, php and javascript
+
+
 Web Version, Home Page
 
 ![homePage](https://user-images.githubusercontent.com/112892620/213875516-42a75568-dc9f-41e9-9f0b-8b1576e73132.png)
