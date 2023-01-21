@@ -55,3 +55,7 @@ Home Page:
 Add Product
 
 ![groguruAddProductMobile](https://user-images.githubusercontent.com/112892620/213889317-1f00e728-54b2-4887-9b7c-7ee8d0ebdbf2.png)
+
+Dashboard Mobile
+
+![groguruDashboardMobil](https://user-images.githubusercontent.com/112892620/213889431-71c38bab-0484-4229-ac63-7938353cda0e.png)
