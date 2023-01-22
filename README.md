@@ -59,6 +59,7 @@ Dashboard Mobile
 
 Blog:
 
+![growguruBlogMobile](https://user-images.githubusercontent.com/112892620/213910450-561ea42a-f94e-4b93-b7a8-6bc1b383eca2.png)
 
 Product Details:
 
