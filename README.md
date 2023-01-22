@@ -55,6 +55,7 @@ Add Product:
 
 Dashboard Mobile
 
+![growguruDashboardMobile](https://user-images.githubusercontent.com/112892620/213910213-91af7b69-33f9-479a-b2d4-f568053da6e6.png)
 
 Blog:
 
