@@ -40,6 +40,9 @@ Blog:
 
 ![growguruBlogWeb](https://user-images.githubusercontent.com/112892620/213893975-faf58a8c-c94e-447a-b3aa-f8f55c8b5ba6.png)
 
+404 Page:
+
+![404](https://user-images.githubusercontent.com/112892620/213910560-cf983522-c81b-4626-b1ea-e98a3341c5ef.png)
 
 
 #################### Web Version ####################
