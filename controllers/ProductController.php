@@ -26,9 +26,18 @@ class ProductController{
     }
     public function updateProduct()
     {
-        if(isset($_POST['update']) && !empty($_FILES["image"]["name"]))
+        if(isset($_POST['update']))
         {
-            $image_product=file_get_contents($_FILES["image"]["tmp_name"]);
+            if(!empty($_FILES["image"]["name"]))
+            {
+                $image_product=file_get_contents($_FILES["image"]["tmp_name"]);
+            }else
+            {
+                $product = new ProductController();
+                $productWithId=$product->getOneProduct();
+                $image_product=$productWithId->photo;
+            }
+            
             $data = array(
                 'id' =>$_GET['id'],
                 'name' => $_POST['name'],
