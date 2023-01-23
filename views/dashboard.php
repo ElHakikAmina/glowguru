@@ -118,7 +118,7 @@ $TotalProductsInStock=$product->TotalProductsInStock();
                 <td class="text-muted">Final Price: <?php echo $p['final_price']; ?></td>
                 <td class="text-muted">Quantity: <?php echo $p['quantity']; ?></td>
                 <td>
-                <button class="btn btn-warning" style="width:100px;">Update</button>
+                <a href="http://localhost/glowguru/modifyProduct/<?php echo $p['id']; ?>"><button class="btn btn-warning" style="width:100px;">Update</button></a>
                 <form method="post" action="http://localhost/glowguru/dashboard/<?php echo $p['id']; ?>">
                     <button class="btn btn-danger" style="width:100px;">Delete</button>
                 </form>

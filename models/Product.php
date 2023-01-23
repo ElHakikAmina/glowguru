@@ -79,7 +79,7 @@ class Product{
     }
     static public function getAll()
     {
-        $stmt = DB::connect()->prepare('SELECT * FROM products');
+        $stmt = DB::connect()->prepare('SELECT * FROM products order by id desc');
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();
