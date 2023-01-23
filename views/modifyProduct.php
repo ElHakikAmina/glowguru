@@ -20,12 +20,9 @@ $productWithId=$product->getOneProduct();
 <body>
 <?php include './views/pages/headerSmall.php' ?>
     
-
-
     <section>
-        <div class="row">
-            <div class="col-lg-6 text-white mx-auto">
-                
+        <div class="">
+            <div class="col-lg-6 col-10 text-white mx-auto"> 
                 <h2 class="text-green text-center my-5">Update a product</h2>
 
                 <form method="post" enctype="multipart/form-data">
@@ -63,19 +60,12 @@ $productWithId=$product->getOneProduct();
                         <img src="http://localhost/glowguru/models/affiche_img.php?id=<?php echo $productWithId->id;?>" style="width:80px;" alt="">
                       </div>
                     
-                  
                     <!-- Submit button -->
                     <button type="submit" name="update" class="btn btn-primary btn-block mb-4 bg-green">Update product</button>
                   </form>
-
-
-
-            </div>
-            
+            </div> 
         </div>
     </section>
-
-
 
     <footer class="bg-green">
         <div class="container">
@@ -93,7 +83,6 @@ $productWithId=$product->getOneProduct();
             </div>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

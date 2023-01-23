@@ -11,12 +11,6 @@ class Admin{
             $stmt->execute();
             $count = $stmt->rowCount();
             return $count;
-        //     $user =$stmt->fetch(PDO::FETCH_OBJ);
-        //     return $user;
-        //     if($stmt->execute())
-        //     {
-        //         return 'ok';
-        //     }
         }catch (PDOException $ex)
         {
             echo 'erreur'.$ex->getMessage();

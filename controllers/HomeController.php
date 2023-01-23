@@ -12,7 +12,6 @@ class HomeController
         $pages=['blog','add','dashboard','login','product','index','modifyProduct'];
         if(in_array($page,$pages))
         {
-            //$home->index($page);
             include ('views/'.$page.'.php');
         }else if($page=='logout')
         {

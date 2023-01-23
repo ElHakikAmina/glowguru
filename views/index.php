@@ -75,10 +75,6 @@ $home2 = new HomeController();
             </div>
         </div>
     </section>
-
-
-
-
  <!-- special products -->
  <section class="py-5" id="special">
     <div class="container">
@@ -110,17 +106,7 @@ $home2 = new HomeController();
     </div>
 </section>
  <!-- End of special products -->
-
-
-
-
-
-
-
-
-
-
-
+    
     <section id="sec-2" class="py-5">
         <div class="container my-4">
             <div class="row gx-lg-5">
@@ -186,7 +172,6 @@ $home2 = new HomeController();
                     <div class="row">
                         <div class="col-sm-2 d-sm-flex justify-content-sm-end">
                            <span class="d-flex align-items-center justify-content-center circle-icon bg-white text-green mx-sm-0 mx-auto mb-4">
-                            <!-- <i class="fa fa-tv fs-2"></i> -->
                             <i class="fa-solid fa-paintbrush fs-2"></i>
                            </span> 
                         </div>
@@ -204,7 +189,6 @@ $home2 = new HomeController();
                     <div class="row">
                         <div class="col-sm-2 d-sm-flex justify-content-sm-end">
                            <span class="d-flex align-items-center justify-content-center circle-icon bg-white text-green mx-sm-0 mx-auto mb-4">
-                            <!-- <i class="fa fa-crop fs-2"></i> -->
                             <i class="fa-solid fa-certificate fs-2"></i>
                            </span> 
                         </div>

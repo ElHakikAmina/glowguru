@@ -12,10 +12,8 @@ class ProductController{
             {
                header("location:http://localhost/glowguru/dashboard");
                 
-            }
-            
-        }
-        
+            } 
+        }  
     }
     public function getProductEndsSoon()
     {
@@ -28,7 +26,7 @@ class ProductController{
     }
     public function updateProduct()
     {
-        if(isset($_POST['update']))
+        if(isset($_POST['update']) && !empty($_FILES["image"]["name"]))
         {
             $image_product=file_get_contents($_FILES["image"]["tmp_name"]);
             $data = array(
@@ -45,8 +43,7 @@ class ProductController{
             header("location:http://localhost/glowguru/product/".$_GET['id']);
             if($result === 'ok')
             {
-                //Session::set('success','Employe modifier');
-                //Redirect::to('home');
+                
             }else
             {
                 echo $result;
@@ -71,17 +68,9 @@ class ProductController{
     }
     public function addProduct()
     {
-        if(isset($_POST['add']))
+        if(isset($_POST['add']) && array_filter($_FILES['image']['tmp_name'])!=[])
         {
-            //$image_product=file_get_contents($_FILES["image"]["tmp_name"]);
             $data = array(
-                
-            //     'name' => $_POST['name'],
-            //     'buying_price' => $_POST['buying_price'],
-            //     'final_price' => $_POST['final_price'],
-            //     'quantity' => $_POST['quantity'],
-            //     'description' => $_POST['description'],
-            //    'image'=> $image_product ,
             );
             foreach ($_POST['name'] as $key => $name) {
                 $data[$key]['name'] = $name;
@@ -90,7 +79,9 @@ class ProductController{
                 $data[$key]['buying_price'] = $_POST['buying_price'][$key];
                 $data[$key]['final_price'] = $_POST['final_price'][$key];
             }
+            $i=0;
             foreach ($_FILES['image']['tmp_name'] as $key => $image) {
+                if(!empty($_FILES['image']['name'][0]))
                 $data[$key]['image'] = file_get_contents($image);
             }
             $result = Product ::add($data);
@@ -98,5 +89,4 @@ class ProductController{
         }
     }
 }
-
 ?>

@@ -4,6 +4,7 @@ $admin->isAdminConnected();
 //
 $product = new ProductController();
 $product->addProduct();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

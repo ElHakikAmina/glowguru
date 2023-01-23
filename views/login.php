@@ -18,8 +18,6 @@
 <body>
 <?php include './views/pages/headerSmall.php' ?>
     
-
-
     <section class="vh-100 mb-5">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -51,10 +49,7 @@
                         <div class="pt-1 mb-4">
                           <input type="submit" value="Login" class="btn  btn-lg btn-block btn-green" name="btn-login" >
                         </div>
-      
-                        
                       </form>
-      
                     </div>
                   </div>
                 </div>
@@ -63,8 +58,6 @@
           </div>
         </div>
       </section>
-
-
 
       <footer class="bg-green mt-5">
         <div class="container">

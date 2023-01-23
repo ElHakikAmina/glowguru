@@ -1,6 +1,5 @@
 
 <?php
-
 if(isset($_GET['id']))
 {
     $existProduct = new ProductController();
@@ -25,8 +24,6 @@ if(isset($_GET['id']))
 <body>
 <?php include './views/pages/headerSmall.php' ?>
     
-
-
     <section class="col-lg-11  mx-auto my-4 row">
         <!-- Product Image -->
         <div class="col-md-5">
@@ -43,9 +40,6 @@ if(isset($_GET['id']))
             <a href="" class="btn btn-green mt-3">Order Now</a>
         </div>
     </section>
-
-
-
 
     <section id="sec-1" class="py-5 bg-grey">
         <div class="container my-3">
@@ -83,10 +77,6 @@ if(isset($_GET['id']))
             </div>
         </div>
     </section>
-
-
-
-
 
     <section class="py-5" id="special">
     <div class="container">
@@ -167,13 +157,6 @@ if(isset($_GET['id']))
     </div>
 </section>
 
-
-
-   
-
-
-
-
     <footer class="bg-green">
         <div class="container">
             <div class="row pt-4 text-white">
@@ -190,7 +173,6 @@ if(isset($_GET['id']))
             </div>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
