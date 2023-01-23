@@ -17,7 +17,7 @@ Home Page:
 
 Login:
 
-
+![groguruLoginWeb](https://user-images.githubusercontent.com/112892620/213909920-f5a6843b-d482-401b-9e69-9d9467f78760.png)
 
 Product Details:
 
@@ -34,27 +34,41 @@ Multiple Insert To The Database:
 
 Dashboard:
 
+![growguruDashboardWeb](https://user-images.githubusercontent.com/112892620/213894081-80c85a63-9a51-40cb-8558-6a1035346264.png)
 
 Blog:
 
 ![growguruBlogWeb](https://user-images.githubusercontent.com/112892620/213893975-faf58a8c-c94e-447a-b3aa-f8f55c8b5ba6.png)
 
+404 Page:
+
+![404](https://user-images.githubusercontent.com/112892620/213910560-cf983522-c81b-4626-b1ea-e98a3341c5ef.png)
 
 
 #################### Web Version ####################
 
 Home Page:
 
+![growfuruHomeMobile](https://user-images.githubusercontent.com/112892620/213894160-c85e3574-fdec-4bba-be9a-00059674318d.png)
 
 
 Add Product:
 
+![groguruAddProductmobile](https://user-images.githubusercontent.com/112892620/213909679-2336f27b-9c0e-41e9-a152-6c574d572ea9.png)
 
 Dashboard Mobile
 
+![growguruDashboardMobile](https://user-images.githubusercontent.com/112892620/213910213-91af7b69-33f9-479a-b2d4-f568053da6e6.png)
 
 Blog:
 
+![growguruBlogMobile](https://user-images.githubusercontent.com/112892620/213910450-561ea42a-f94e-4b93-b7a8-6bc1b383eca2.png)
 
 Product Details:
+
+![groguruPdoductDetailsMobile](https://user-images.githubusercontent.com/112892620/213894349-ab2e1fc2-bbeb-40a0-afc0-9cf7a2730547.png)
+
+Login:
+
+![groguruLoginMobile](https://user-images.githubusercontent.com/112892620/213909969-4ed84163-092f-4617-b816-4a4cd3012dfe.png)
 
