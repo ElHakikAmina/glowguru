@@ -11,8 +11,11 @@ function autoload ($class_name)
         $file = sprintf($path.'%s.php',$class_name);
         if(is_file($file))
         {
-            include_once $file;
+            include $file;
         }
      }
 }
+//psr
+//composer package manager
+//autoload dynamiq
 ?>

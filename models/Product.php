@@ -5,7 +5,7 @@ class Product{
         $query="SELECT sum(quantity) as total FROM products ";
         $stmt =DB::connect()->prepare($query);
         $stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC); 
         return $row['total'];
     }
     public static function TotalOfArticles()
@@ -28,7 +28,7 @@ class Product{
     {
         $stmt = DB::connect()->prepare("SELECT * FROM products where quantity!='0' order by quantity asc");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(PDO::FETCH_OBJ); 
         $stmt->close();
         $stmt=null;
     }

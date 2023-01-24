@@ -14,7 +14,6 @@ const search =()=>{
     {
         let match = product[i].getElementsByTagName("h6")[0];
         if(match){
-            // let textvalue=match.textContent || match.innerHTML;
             let textvalue=match.textContent;
             if(textvalue.toUpperCase().indexOf(searchbox)>-1)
             {

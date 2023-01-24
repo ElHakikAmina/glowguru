@@ -28,14 +28,14 @@ class ProductController{
     {
         if(isset($_POST['update']))
         {
-            if(!empty($_FILES["image"]["name"]))
-            {
-                $image_product=file_get_contents($_FILES["image"]["tmp_name"]);
-            }else
+            if(empty($_FILES["image"]["name"]))
             {
                 $product = new ProductController();
                 $productWithId=$product->getOneProduct();
                 $image_product=$productWithId->photo;
+            }else
+            {
+                $image_product=file_get_contents($_FILES["image"]["tmp_name"]);    
             }
             
             $data = array(
