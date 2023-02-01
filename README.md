@@ -1,7 +1,7 @@
 # glowguru
 ![linkden](https://user-images.githubusercontent.com/112892620/214040386-89ef6520-a50f-4d5d-944f-3a5157014143.png)
 
-Is a website that sells cosmetics online.
+**glowguru** Is a website that sells cosmetics online.
 
 The website allows the admin to login, add, delete and modify a product also to search in the dashboard and disconnect.
 
